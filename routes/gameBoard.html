@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title> Puissance 4 X-TREM </title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" id="x-google-fonts-css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700%2C700italic%7CMontserrat%3A400%2C700&amp;subset=latin%2Clatin-ext&amp;ver=4.4.2" type="text/css" media="all">
+	</head>
+	
+	<body>
+	<div class = "gauche">
+		<h3 id = "room-title">Entre le code de la salle que tu souhaites rejoindre : </h3>
+		<input id="room-input"></input></span><br>
+		<button type="button" class="btn btn-primary" id="room-submit">Rejoins une salle !</button>
+
+		<h3 class="room-full"> Aïe... cette salle est pleine !</h3>
+		<h3 class="room-full">Tu peux retenter plus tard.</h3>
+
+		<h3 id = "begin-title"> Que le meilleur gagne ! </h3>
+
+		<h3 id="room-id">ID de la salle : pas encore renseigné</h3>
+  		<h3 id="player-id">Couleur du joueur : pas encore définie</h3>
+  		<h3 id="turn-id">À qui le tour ? On ne sait pas encore...</h3>
+
+  		<h3 class="victory">Bravo !!! Tu sors victorieux de cette bataille !</h3>
+  		<h3 class="victory">Tu maitrises ce jeu à la perfection.</h3>
+  		<h3 class="victory">Un coup de refresh pour une nouvelle partie ?</h3>
+  		<h3 class="defeat">Ohlala terrible, tu as perdu...</h3>
+  		<h3 class="defeat">La prochaine fois, pense à MIEUX jouer.</h3>
+  		<h3 class="defeat">Un coup de refresh pour une nouvelle partie ?</h3>
+  		<h3 class="tie">Et c'est une ÉGALITÉ</h3>
+  		<h3 class="tie">Bravo à tous les deux</h3>
+  		<h3 class="tie">Un coup de refresh pour une nouvelle partie ?</h3>
+
+		  <div>
+			<label for="delete-row">Utiliser un leurre</label>
+			<input type="checkbox" id="delete-row" name="delete-row" />
+		  </div>
+		  
+
+		<div id = "board"> </div>
+		<h3 id="patience">Eh oh moussaillon, ce n'est pas ton tour...</h3>
+	</div>
+	<section id="chat">
+		<h1> CHAT </h1>
+		<h5>N'insulte pas ton adversaire !</h5>
+		<ul id="messages"></ul>
+		<form action="">
+			<input id="m" autocomplete="off" /><button class="btn">Send</button>
+		</form>
+		</section>
+
+
+		<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="./client.js"></script>
+	    <script src="./main.js"></script>
+	</body>
+
+</html>
